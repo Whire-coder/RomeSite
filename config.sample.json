@@ -2,5 +2,6 @@
     "ip": "ip",
     "port": "80",
     "https": true,
-    "name": "name"
+    "name": "name",
+    "authorization": "authorization"
 }

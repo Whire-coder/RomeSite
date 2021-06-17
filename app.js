@@ -15,8 +15,8 @@ app.set("views", path.join(__dirname, "/views"));
 
 app.use(async function(req, res, next){
 
-    await fetch("http://45.90.162.185:81/web", {
-        headers: { "Authorization": "Bearer mouchou" }
+    await fetch("http://" + config.ip + ":81/web", {
+        headers: { "Authorization": "Bearer " + config.authorization }
     })
     .then(res => res.json())
     .then(json => {
