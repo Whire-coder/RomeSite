@@ -12,19 +12,19 @@
     <meta name="description" content="DrakeBot est un bot discord de Moderation, d'Administration et d'Economie.">
     <meta name="author" content="Rome">
 </head>
+
 <body>
 
     <div class="header">
         <header>
             <button class="boutonDeroulant" onclick="deroulerMenu()">Menu</button>
-
             <nav class="doitApparaitreApresCliqueSurBoutonDeroulant" id="d1">
                 <ul>
                     <li>
-                        <a href="/commands" class="doitApparaitre" onclick="deroulerMenu()">Commandes</a>
+                        <a href="/drakebot/commands" class="doitApparaitre" onclick="deroulerMenu()">Commandes</a>
                     </li>
                     <li>
-                        <a href="/staff" class="doitApparaitre" onclick="deroulerMenu()">Staff</a>
+                        <a href="/drakebot/staff" class="doitApparaitre" onclick="deroulerMenu()">Staff</a>
                     </li>
                     <li>
                         <a target="_blank" href="https://top.gg/bot/762965943529766912/vote" class="doitApparaitre" onclick="deroulerMenu()">Votes</a>
@@ -39,19 +39,24 @@
 
     <div class="center">
         <h1>DrakeBot</h1>
+
         <h3 id="text-center-interactive">Déjà sur <%= serverCount %> serveurs avec <%= userCount %> membres</h3>
+
         <button type="button" onclick="window.open('https://discord.com/oauth2/authorize?client_id=762965943529766912&permissions=8&scope=bot','_blank');" class="add-link" style="font-size: 17px;">
             <strong>Ajouter le bot</strong >
         </button>
     </div>
 
     <div class="script">
-        <script src="js/light.js"></script>
-        <script src="js/deroulerMenu.js"></script>
+        <script src="/js/light.js"></script>
+        <script src="/js/deroulerMenu.js"></script>
     </div>
 
     <div class = "footer">
         <%- include('includes/footer') %>
     </div>
+
 </body>
+
 </html>
+
