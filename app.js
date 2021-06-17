@@ -24,6 +24,9 @@ app.use(async function(req, res, next){
             serverCount: json.serverCount,
             userCount: json.userCount
         };
+
+        req.owner = json.owner;
+        req.support = json.support;
     });
     next();
 
