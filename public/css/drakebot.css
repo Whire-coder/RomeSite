@@ -1,0 +1,82 @@
+.footer {
+    margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+} 
+
+.footer-link {
+  text-decoration: none;
+}
+
+body {
+  background-color: #24252A;
+  color: #FFFFFF;
+}
+
+button {
+  font:bold 12px Verdana;
+  font-family: 'Open Sans', sans-serif, Helvetica, arial, sans-serif;
+}
+
+.doitApparaitreApresCliqueSurBoutonDeroulant {
+  visibility: hidden;
+} 
+
+.boutonDeroulant {
+  border-radius:12px 0 12px 0;
+  background: #9402f5;
+  border:none;
+  color: #FFFFFF;
+  width:110px;
+  cursor:pointer;
+  text-transform:capitalize;
+  font:bold 12px Verdana;
+  padding:6px 0 6px 0;
+}
+
+.add-link {
+  background-color: #9402f5;
+  width: 300px;
+  font-family: 'Open Sans', sans-serif, Helvetica, arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  height: 50px;
+  font-size: 50px;
+}
+
+nav {
+  display: block;
+}
+
+ul {
+  list-style: disc;
+}
+
+a {
+  color: #fff;
+}
+
+.doitApparaitre {
+  font-family: 'Poppins', Helvetica, arial, sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.center h1 {
+  font-family: 'Poppins', Helvetica, arial, sans-serif;
+  font-size: 38px;
+}
+
+.center h3 {
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif, Helvetica, arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+  color: #fff;
+  padding: 60px 0 10px 0;
+}
