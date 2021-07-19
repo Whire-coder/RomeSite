@@ -12,33 +12,31 @@
     <meta name="description" content="DrakeBot est un bot discord de Moderation, d'Administration et d'Economie.">
     <meta name="author" content="Rome">
 </head>
-<body class="light">
-
-    <div class="buttons">
-        <label class="switch-theme">
-            <input type="checkbox" id="switch" onclick="light()"/>
-            <span class="slider round"></span>
-        </label>
-    </div>
-
-    <div class="staff">
-        <p>
-            <h1>Owner: </h1>
-
-            <h2>
-                <a target="_blank" href=https://dsc.bio/romedev><%= owner.name %></a> 
-            </h2>
-
-            <h1>Support & Moderation: </h1>
-            
-            <h2>
-                <a target="_blank" href=https://discord.com/users/<%= support[0].id %>><%= support[0].name %></a> (Support) <br>
-            </h2>
-        </p>
-    </div>
-
-    <div class = "center">
-        <script src="/js/light.js"></script>
+<body>
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>Owner</h2>
+              <h3> <%= owner.name %> </h3>
+              <img src=<%= owner.avatar %>>
+              <p></p>
+              <a target="_blank" href=https://dsc.bio/romedev>Discord</a> 
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>Support</h2>
+              <h3> <%= support[0].name %></h3>
+              <img src=<%= support[0].avatar %>>
+              <p></p>
+              <a target="_blank" href=https://discord.com/users/<%= support[0].id %>>Discord</a>
+            </div>
+          </div>
+        </div>
     </div>
 
     <div class = "footer">
