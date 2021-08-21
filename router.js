@@ -11,6 +11,11 @@ router
             userCount: req.stats.userCount
         });
     })
+    .get('/simplehammer', function(req, res){
+        const file = `${__dirname}/res/SimpleHammer.jar`;
+
+        res.download(file);
+    })
     .get("/drakebot/staff", async function(req, res) {
         res.render("staff", {
             owner: req.owner,
