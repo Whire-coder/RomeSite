@@ -3,15 +3,15 @@ const router = express.Router();
 
 router
     .get("/", async function(req, res) {
-        res.render("home");
-    })
-    .get("/drakebot", async function(req, res) {
         res.render("drakebot", {
             serverCount: req.stats.serverCount,
             userCount: req.stats.userCount,
             owner: req.owner,
             support: req.support
         });
+    })
+    .get("/rome", async function(req, res) {
+        res.render("home");
     })
     .get('/simplehammer', function(req, res){
         const file = `${__dirname}/res/SimpleHammer.jar`;
