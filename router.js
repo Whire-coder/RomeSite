@@ -18,6 +18,9 @@ router
 
         res.download(file);
     })
+    .get("/feloshSaitPasEcrire", function(req, res) {
+        res.render("felosh")
+    })
     .use((req, res) => {
         res.status(404).render("404");
     });
